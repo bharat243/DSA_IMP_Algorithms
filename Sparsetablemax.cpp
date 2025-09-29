@@ -32,3 +32,7 @@ struct SparseTable {
         return min(st[L][j], st[R - (1 << j) + 1][j]);
     }
 };
+// sparse table use for Idempodent functions like min,max,__gcd,lcm, bitwise and , bitwiae or
+// no point update 
+// preprocessing O(nlogn)
+// query timr o(1)
